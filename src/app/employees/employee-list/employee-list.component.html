@@ -1,0 +1,17 @@
+<div>
+	<h2>List of Employee</h2>
+	<table class="table table-sm table-hover">
+		<tr *ngFor="let emp of employeeService.employeeList">
+			<td>{{ emp.FirstName }} - {{ emp.LastName }}</td>
+			<td>{{ emp.EmpCode }}</td>
+			<td>
+				<a class="btn" (click)="showForEdit(emp)">
+					<i class="fa fa-pencil-square-o"></i>
+				</a>
+				<a class="btn text-danger" (click)="onDelete(emp.Id)">
+					<i class="fa fa-trash-o"></i>
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>

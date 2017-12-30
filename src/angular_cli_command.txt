@@ -1,0 +1,20 @@
+npm install -g @angular/cli //to install angular cli
+or 
+npm i -g @angular/cli
+
+ng new angularCRUD //to create new angular app
+ng serve --open //to run the application
+
+ng generate component employees 
+or
+ng g c employees // to create new component
+
+ng g s employee  //to create service class
+
+ng g class employee.model  //to create a class
+
+
+
+
+
+
